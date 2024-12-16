@@ -15,7 +15,7 @@ namespace EasyTestGetAllIntersectingActors
             time += 1;
             if (time > 40)
             {
-                List<Actor> flies = GetAllIntersectingActors(typeof(Fly));
+                List<Actor> flies = GetIntersectingActors(typeof(Fly));
                 foreach (var fly in flies)
                 {
                     fly.Y -= 50;
